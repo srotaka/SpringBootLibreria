@@ -1,0 +1,149 @@
+header.masthead {
+  background-image: url(../img/landing02-min.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  color: #f3969a;
+}
+
+header.masthead .masthead-subheading {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-top: 3rem;
+  font-family: "Carattere", cursive;
+}
+
+header.masthead .masthead-heading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-top: 5rem;
+  font-family: "Roboto";
+}
+
+.sub-body {
+  background-image: url(../img/background-libreria03.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  padding-top: 0rem;
+  color: rgb(43, 42, 42) !important;
+}
+
+.btn-space {
+  margin-right: 5px;
+}
+
+#cards {
+  background-color: #f8c0c3 !important;
+  text-align: center;
+}
+
+.card-title {
+  font-family: "Roboto";
+  color: rgb(61, 58, 58) !important;
+}
+.card-text {
+  font-family: "Carattere", cursive;
+  font-size: 2rem;
+  color: rgb(61, 58, 58) !important;
+}
+
+.vert-align {
+  vertical-align: middle;
+}
+
+.index-libro {
+  background-image: url(../img/libro.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 33%;
+  height: 200px;
+  margin-top: 9pt !important;
+}
+
+@media (max-width: 992px) {
+  .index-libros {
+    background-position: top;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.index-autor {
+  background-image: url(../img/autor.png);
+  background-position: left 25% center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 200px;
+  margin-top: 9pt !important;
+}
+
+@media (max-width: 992px) {
+  .index-autores {
+    background-position: top;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.index-editorial {
+  background-image: url(../img/editorial.png);
+  background-position: left 25% center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 33%;
+  height: 200px;
+  margin-top: 9pt !important;
+}
+
+@media (max-width: 992px) {
+  .index-editoriales {
+    background-position: top;
+    width: 100%;
+    height: 500px;
+  }
+}
+.clickable-card {
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.clickable-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 992px) {
+  .clickable-card:hover {
+    transform: scale(1.03);
+  }
+}
+
+.clickable-card > a {
+  color: rgb(39, 38, 38) !important;
+}
+
+.main {
+  margin-bottom: 4.5rem !important;
+}
+
+#encabezado {
+  text-align: center;
+  color: #ff7b90;
+  font-size: 3rem;
+  margin-top: 6rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
