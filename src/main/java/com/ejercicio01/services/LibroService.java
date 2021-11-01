@@ -33,8 +33,6 @@ public class LibroService {
         validarAnio(anio);
         validarEjemplares(ejemplares);
         validarEjemplaresPrestados(ejemplaresPrestados, ejemplares);
-//        aService.validarNombreAutor(autor.getNombre().toUpperCase());
-//        eService.validarNombreEditorial(editorial.getNombre().toUpperCase());
 
 //        String strIsbn = isbnRandom.isbnRandom();
 //        Long isbn = Long.parseLong(strIsbn);
@@ -56,15 +54,15 @@ public class LibroService {
 
     @Transactional
     public void modificarLibro(String id, Long isbn, String titulo, Integer anio, Integer ejemplares, Integer ejemplaresPrestados, Autor autor, Editorial editorial) throws Exception {
+        
         Libro libro = libroRepositorio.findById(id).get();
-
-        validarTituloLibro(titulo.toUpperCase());
+        if (titulo == null || titulo.trim().isEmpty()) {
+            throw new Exception("EL NOMBRE DEL LIBRO ES OBLIGATORIO.");
+        }
         validarIsbn(isbn);
         validarAnio(anio);
         validarEjemplares(ejemplares);
         validarEjemplaresPrestados(ejemplaresPrestados, ejemplares);
-//        aService.validarNombreAutor(autor.getNombre().toUpperCase());
-//        eService.validarNombreEditorial(editorial.getNombre().toUpperCase());
 
         libro.setIsbn(isbn);
         libro.setTitulo(titulo.toUpperCase());

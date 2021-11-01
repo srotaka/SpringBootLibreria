@@ -130,29 +130,26 @@
     <!-- END NAVBAR -->
 
     <!-- ERRORS -->
-    <div th:fragment="div-error" th:if=${error!=null} class="alert alert-danger disable mt-4 col-xl-4 text-center" th:text="${error}" id=error ></div>
-    <div th:fragment="div-exito" th:if=${exito!=null} class="alert alert-success disable mt-4 col-xl-4 text-center" th:text="${exito}" id=error></div>
+    <div th:fragment="div-error" th:if=${error!=null} class="alert alert-dismissible alert-danger disable mt-4 col-xl-4 text-center" th:text="${error}" id=alert >
+    </div>
+    <div th:fragment="div-exito" th:if=${exito!=null} class="alert alert-dismissible alert-success disable mt-4 col-xl-4 text-center" th:text="${exito}" id=alert>
+    </div>
     <!-- END ERRORS -->
 
-     <!-- FOOTER -->
-
-     <footer th:fragment="footer">
-      <div class="footer py-1 light bg-light fixed-bottom" >
-        <div class="container" >
+    <!-- FOOTER -->
+    
+    <footer th:fragment="footer">
+      <div class="footer py-1 light bg-light fixed-bottom">
+        <div class="container">
           <div class="copyright text-center">
             &copy; Copyright 2000-2021 |
-            <strong><span>Sakura Corporation</span></strong
-            > | All rights reserved <br />  
-            <img
-              src="../../img/logo.png"
-              width="200"
-              height="40"
-            />
+            <strong><span>Sakura Corporation</span></strong> | All rights reserved <br />
+            <img src="../../img/logo.png" width="200" height="40" />
           </div>
         </div>
       </div>
-      </footer>
-      <!-- END FOOTER -->
-
-  </body>
-</html>
+    </footer>
+    <!-- END FOOTER -->
+    </body>
+    
+    </html>
