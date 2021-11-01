@@ -130,8 +130,8 @@
     <!-- END NAVBAR -->
 
     <!-- ERRORS -->
-    <div th:fragment="div-error" th:if=${error!=null} class="alert alert-danger disable mt-4 col-xl-6" th:text="${error}"></div>
-    <div th:fragment="div-exito" th:if=${exito!=null} class="alert alert-success disable mt-4 col-xl-6" th:text="${exito}"></div>
+    <div th:fragment="div-error" th:if=${error!=null} class="alert alert-danger disable mt-4 col-xl-4 text-center" th:text="${error}" id=error ></div>
+    <div th:fragment="div-exito" th:if=${exito!=null} class="alert alert-success disable mt-4 col-xl-4 text-center" th:text="${exito}" id=error></div>
     <!-- END ERRORS -->
 
      <!-- FOOTER -->

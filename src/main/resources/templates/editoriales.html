@@ -28,6 +28,11 @@
           <a th:href="@{/editoriales/crear}">Cargar editoriales.</a>
         </h5>
       </div>
+         <!-- ERRORS -->
+         <div th:replace="utilities :: div-error"></div>
+         <div th:replace="utilities :: div-exito"></div>
+        <!-- END ERRORS -->        
+
       <div class="table-responsive" th:unless="${editoriales.isEmpty()}">
         <table class="table table-hover table-sm table-bordered">
           <thead class="table-secondary text-center">
@@ -83,10 +88,6 @@
             </tr>
           </tbody>
         </table>
-         <!-- ERRORS -->
-         <div th:replace="utilities :: div-error"></div>
-         <div th:replace="utilities :: div-exito"></div>
-        <!-- END ERRORS -->        
       </div>
     </div>
     <!-- END LISTADO -->
